@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>COSC 331 Demo</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<script src="/index.js"></script>
+	</head>
+
+	<body>
+		<div>
+			<h1 align="center">All the posts!</h1>
+		</div>
+		<div>
+			<h2>Insert a post!</h2>
+			<form
+				id="insert-post"
+				name="insert-post"
+				method="post">
+				<div>
+					<label for="title">Post Title:</label>
+					<input 
+						id="title"
+						type="text"
+						name="title"
+						required
+						title="Please write a title.">
+				</div>
+				<div>
+					<label for="body">Post Body:</label>
+					<textarea
+						form="insert-post"
+						id="body"
+						name="body"
+						rows="10"
+						cols="50"
+						wrap="soft"></textarea>
+				</div>
+				<div>
+					<button
+						id="insert-post-button"
+						form="insert-post"
+						type="button">Add Post</button>
+				</div>
+			</form>
+		</div>
+
+		<div>
+			<table>
+				<thead>
+					<tr id="show-posts-header">
+						<td>ID</td>
+						<td>Published</td>
+						<td>Title</td>
+						<td>Body</td>
+					</tr>
+				</thead>
+				<tbody id="show-posts">
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

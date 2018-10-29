@@ -1,0 +1,14 @@
+body {
+	font-family: monospace;
+}
+
+div {
+	margin: 16px;
+}
+
+tr#show-posts-header td {
+	font-weight: bold;
+	text-align: center;
+	padding-left: 16px;
+	padding-right: 16px;
+}
