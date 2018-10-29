@@ -6,6 +6,23 @@ div {
 	margin: 16px;
 }
 
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+th, td{
+    text-aligh: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color:#f2f2f2;
+}
+#show-posts-header td{
+    background-color:#5CAF50;
+    color:white;
+}
+
 tr#show-posts-header td {
 	font-weight: bold;
 	text-align: center;
