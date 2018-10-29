@@ -24,7 +24,7 @@ function insertPostSubmitHandler(e) {
 		body: f.elements[1].value
 	}
 	console.log("Submitting post : " + JSON.stringify(newPost))
-	fetch("http://192.168.0.21:5000/new",
+	fetch("http://10.1.227.121:5000/new",
 		{
 			method: "POST",
 			mode: "cors",
@@ -43,7 +43,7 @@ window.onload = e => {
 
 	insertPostButton.onclick = insertPostSubmitHandler
 
-	fetch("http://192.168.0.21:5000/", {mode: "cors"})
+	fetch("http://10.1.227.121:5000/", {mode: "cors"})
 		.then(res => res.json())
 		.then(o => {
 			o.map(generatePostRow)
